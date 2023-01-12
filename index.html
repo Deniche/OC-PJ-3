@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Compose your own menu from gastronomic restaurants">
+        <meta name="keywords" content="food, menu, ordering, restaurant, gastronomic, paris, frace">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="public/css/prefixed/style.css" type="text/css" rel="stylesheet">
+        <link href="public/images/logo/ohmyfood@2x.svg" type="image/x-icon" rel="shortcut icon" >
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+        <title>Ohmyfood</title>
+    </head>
+    <body>
+
+        <div class="loader">
+                
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        
+        </div>
+    
+        <!---<style>
+        header {border: 2px solid red; border-radius: 5px;}
+        </style>
+
+        ---->
+
+
+        <header class="header">
+
+            <div class="header_logo"><a href="#"><img src="public/images/logo/ohmyfood@2x.svg" alt="logo"></a></div>
+        </header>
+
+        <!---<style>
+        header {border: 2px solid red; border-radius: 5px;}
+        </style>
+
+        ---->
+
+        <form class="search" action="#">
+
+            <div class="search__container">
+                <button class="seach__btn" type="submit"><i class="fas fa-map-marker-alt"></i></button>
+                <input type="search" placeholder="Paris, Belleville" name="city-location-seach">
+            </div>
+        </form>
+
+        <!--- 
+        <style>
+        .intro {border: 2px solid red; border-radius: 5px;}
+        </style>
+        --->
+
+        <section class="intro">
+            <h2 class="intro-heading">Book the menu you like</h2>
+            <p class="intro_subline">Discover top-of-the-art restaurants we picked for you</p>
+            <a class="intro_nav btn" href="#C1">Explore our restaurants</a>
+        </section>
+
+        <!--
+        <style>
+        .steps, .each__steps, .steps__links {border: 2px solid red; border-radius: 5px;}
+        </style>
+        -->
+    
+        <section class="steps">
+            <h2 class="steps__heading">How it works</h2>
+            <div class="each__steps">
+                <a class="steps__links" href="#C1"><span>1</span><i class="fas fa-mobile-alt"></i>Choose a restaurant</a>
+                <a class="steps__links" href="#"><span>2</span><i class="fas fa-list-ul"></i>Create your menu</a>
+                <a class="steps__links steps__links--active" href="#"><span>3</span><i class="fas fa-store"></i>Go enjoy it at the restaurant</a>
+            </div>
+        </section>
+
+        <!---
+        <style>
+        .main-section, .restaurant-grid, .card-rest, .card-rest__link, .card-rest__media, .card-rest_tagline {border: 2px solid red; border-radius: 5px;}
+        </style>
+
+        -->
+
+
+        <main class="main-section">
+            <h2 id="C1" class="section-1"> Restaurants</h2>
+            <div class="restaurant-grid">
+                <div class="card-rest">
+                    <a class="card-rest__link" href="menu_the-full-paletter.html">
+                        <div class="card-rest__media">
+                            <img class="card-rest__img" src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" width="400" height="208">
+                            <div class="card-rest_img-content">New</div>
+                        </div>
+                        <div class="card-rest__primary">
+                            <h3 class="card-rest__heading">The Full Pallette</h3>
+                            <h4 class="card-rest_tagline">New York</h4>
+                        </div>
+                    </a>
+                    <div class="card-reset__actions">
+                        <div role="button" class="ResHeartMove" onclick="void(0)" title="Add to favorites">
+                            <div class="ResHeartMove__bottom"><i class="far fa-heart"></i></div>
+                            <div class="ResHeartMove__top"><i class="fas fa-heart"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-rest">
+                    <a class="card-rest__link" href="menu_the-enchanted-plate.html">
+                        <div class="card-rest__media">
+                            <img class="card-rest__img" src="public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="" width="400" height="208">
+                            <div class="card-rest_img-content">New</div>
+                        </div>
+                        <div class="card-rest__primary">
+                            <h3 class="card-rest__heading">The Enchanted Plate</h3>
+                            <h4 class="card-rest_tagline">New York</h4>
+                        </div>
+                    </a>
+                    <div class="card-reset__actions">
+                        <div role="button" class="ResHeartMove" onclick="void(0)" title="Add to favorites">
+                            <div class="ResHeartMove__bottom"><i class="far fa-heart"></i></div>
+                            <div class="ResHeartMove__top"><i class="fas fa-heart"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-rest">
+                    <a class="card-rest__link" href="menu_bastille.html">
+                        <div class="card-rest__media">
+                            <img class="card-rest__img" src="public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" width="400" height="208">
+                            <div class="card-rest_img-content">New</div>
+                        </div>
+                        <div class="card-rest__primary">
+                            <h3 class="card-rest__heading">Bastille</h3>
+                            <h4 class="card-rest_tagline">New York</h4>
+                        </div>
+                    </a>
+                    <div class="card-reset__actions">
+                        <div role="button" class="ResHeartMove" onclick="void(0)" title="Add to favorites">
+                            <div class="ResHeartMove__bottom"><i class="far fa-heart"></i></div>
+                            <div class="ResHeartMove__top"><i class="fas fa-heart"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-rest">
+                    <a class="card-rest__link" href="menu_le-gourmand.html">
+                        <div class="card-rest__media">
+                            <img class="card-rest__img" src="public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="" width="400" height="208">
+                            <div class="card-rest_img-content">New</div>
+                        </div>
+
+                        <div class="card-rest__primary">
+                            <h3 class="card-rest__heading">Le Gourmand</h3>
+                            <h4 class="card-rest_tagline">New York</h4>
+                        </div>
+                    </a>
+                    <div class="card-reset__actions">
+                        <div role="button" class="ResHeartMove" onclick="void(0)" title="Add to favorites">
+                            <div class="ResHeartMove__bottom"><i class="far fa-heart"></i></div>
+                            <div class="ResHeartMove__top"><i class="fas fa-heart"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </main>
+
+        <!--
+
+        <style>
+        footer {border: 2px solid red; border-radius: 5px;}
+        </style>
+
+        -->
+
+       <footer class="footer">
+           <div class="footer_logo"><a href="#"><img src="public/images/logo/ohmyfood@2x.svg" alt="logo"></a></div>
+               <nav class="nav__footer">
+                  <ul>
+                     <li><a href="#"><i class="fas fa-utensils"></i>Suggest a restaurant</a></li>
+                     <li><a href="#"><i class="fas fa-hands-helping"></i>Become a partner</a></li>
+                     <li><a href="#"> Legal</a></li>
+                     <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+                 </ul>
+             </nav>
+       </footer>
+  </body>
+</html>
+        
+    
